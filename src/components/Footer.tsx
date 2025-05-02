@@ -5,7 +5,7 @@ export default function Footer() {
         <p>
           © Copyright by{" "}
           <a href="https://google.com" target="_blank">
-            Prakash
+            Prakash Singh
           </a>
           . Intended for learning or your portfolio.
         </p>
