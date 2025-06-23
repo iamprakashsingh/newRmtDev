@@ -7,7 +7,7 @@ export default function Footer() {
           <a href="https://google.com" target="_blank">
             Prakash Singh
           </a>
-          . Intended for learning or your portfolio.
+          . 
         </p>
       </small>
 

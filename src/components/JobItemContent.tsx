@@ -18,7 +18,9 @@ export default function JobItemContent() {
     <section className="job-details">
       <div>
         <img src={jobItemData.coverImgURL} alt="#" />
-
+        
+        {/* here we are writing the jobid to url to which we will hook in app 
+        component */}
         <a className="apply-btn" href={jobItemData.companyURL} target="_blank">
           Apply
         </a>
@@ -103,7 +105,7 @@ function EmptyJobContent() {
         <div className="job-details__start-view">
           <p>What are you looking for?</p>
           <p>
-            Start by searching for any technology your ideal job is working with
+            Start by searching for the technologies used in your ideal job.
           </p>
         </div>
       </div>

@@ -15,6 +15,7 @@ type JobItemDataApiResponse = {
 const fetchJobItemData = async (
   id: number | null
 ): Promise<JobItemDataApiResponse> => {
+  // these fetch calls always returns promises
   const response = await fetch(`${BASE_API_URL}/${id}`);
   const data = await response.json();
   if (!response.ok) {
@@ -23,6 +24,7 @@ const fetchJobItemData = async (
   return data;
 };
 
+// i had made a custom hook and when i was returning the 
 export function useJobItemData(id: number | null) {
   const { data, isLoading } = useQuery(
     ["job-item", id],
